@@ -1,7 +1,10 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from typing import Final
-# 尝试改为绝对引用（如果相对引用报错）
-from pt_checkin.core.entry import SignInEntry
-from pt_checkin.schema.nexusphp import NexusPHP
+from ..core.entry import SignInEntry
+from ..schema.nexusphp import NexusPHP
 
 class MainClass(NexusPHP):
     URL: Final = 'https://pandapt.net/'
