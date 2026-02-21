@@ -1,8 +1,7 @@
 from typing import Final
-
-from ..core.entry import SignInEntry
-from ..schema.nexusphp import NexusPHP
-
+# 尝试改为绝对引用（如果相对引用报错）
+from pt_checkin.core.entry import SignInEntry
+from pt_checkin.schema.nexusphp import NexusPHP
 
 class MainClass(NexusPHP):
     URL: Final = 'https://pandapt.net/'
